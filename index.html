@@ -565,32 +565,212 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
 </section>
 
 <!-- ══ TESTI ══ -->
+<style>
+/* ── TESTI CAROUSEL ── */
+#testi { background: var(--white); }
+.testi-carousel-wrap { position: relative; overflow: hidden; margin-top: 48px; }
+.testi-track { display: flex; transition: transform 0.55s cubic-bezier(0.4,0,0.2,1); }
+.testi-slide {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  background: rgba(200,152,30,0.14);
+  border: 1px solid var(--rule);
+}
+.testi-card {
+  background: var(--cream);
+  padding: 44px 36px;
+  transition: background 0.25s, transform 0.25s;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+}
+.testi-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s ease;
+}
+.testi-card:hover { background: var(--cream-w); }
+.testi-card:hover::before { transform: scaleX(1); }
+.testi-source {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.testi-source-icon {
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+  font-weight: 700;
+}
+.src-google { background: #fff; border: 1px solid #e0e0e0; color: #4285F4; font-size: 11px; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.05em; }
+.src-linkedin { background: #0A66C2; color: #fff; font-size: 11px; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.05em; }
+.testi-stars { color: #F4B400; font-size: 13px; letter-spacing: 1px; }
+.testi-open {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 52px; color: var(--gold);
+  opacity: 0.25; line-height: 1;
+  margin-bottom: 8px; display: block;
+}
+.testi-text {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px; font-style: italic;
+  color: var(--ink-mid);
+  line-height: 1.78; margin-bottom: 24px;
+}
+.testi-rule { height: 1px; background: var(--rule); margin-bottom: 16px; }
+.testi-name { font-weight: 600; font-size: 14px; color: var(--g-deep); letter-spacing: 0.02em; }
+.testi-role { font-size: 12px; color: var(--gold); margin-top: 3px; line-height: 1.5; }
+/* nav */
+.testi-nav {
+  display: flex; align-items: center;
+  justify-content: center; gap: 14px;
+  margin-top: 28px;
+}
+.t-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: rgba(200,152,30,0.3);
+  cursor: pointer; transition: background 0.25s, transform 0.25s;
+  border: none;
+}
+.t-dot.active { background: var(--gold); transform: scale(1.4); }
+.t-btn {
+  background: none; border: 1.5px solid var(--rule-s);
+  color: var(--gold); width: 38px; height: 38px;
+  cursor: pointer; font-size: 15px;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.25s;
+}
+.t-btn:hover { background: var(--gold); color: var(--g-deep); }
+.testi-count {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px; letter-spacing: 0.12em;
+  color: var(--ink-soft); min-width: 40px; text-align: center;
+}
+@media(max-width:768px) {
+  .testi-slide { grid-template-columns: 1fr; }
+}
+</style>
 <section id="testi">
   <div class="wrap">
-    <span class="lbl rv">From the Room</span>
-    <h2 class="testi-h2 rv d1">What Business Owners Say</h2>
+    <span class="lbl rv">Voices From the Field</span>
+    <h2 class="testi-h2 rv d1">What Business Leaders Say</h2>
     <div class="gold-rule rv d1"></div>
-    <div class="testi-grid">
-      <div class="testi-card rv">
-        <span class="testi-open">"</span>
-        <p class="testi-text">This program shifted something fundamental in how I think about my business. I came looking for strategies. I left with a completely different lens on leadership.</p>
-        <div class="testi-rule"></div>
-        <p class="testi-name">[Name], [Title]</p>
-        <p class="testi-role">[Company]</p>
-      </div>
-      <div class="testi-card rv d1">
-        <span class="testi-open">"</span>
-        <p class="testi-text">Two days with Coach Murali gave me more clarity than two years of consultants. The peer conversations alone were worth every hour.</p>
-        <div class="testi-rule"></div>
-        <p class="testi-name">[Name], [Title]</p>
-        <p class="testi-role">[Company]</p>
-      </div>
-      <div class="testi-card rv d2">
-        <span class="testi-open">"</span>
-        <p class="testi-text">I've attended many programs. None came close. The depth of reflection, the quality of the room — it changed how I show up as a leader.</p>
-        <div class="testi-rule"></div>
-        <p class="testi-name">[Name], [Title]</p>
-        <p class="testi-role">[Company]</p>
+    <div class="testi-carousel-wrap rv d2">
+      <div class="testi-track" id="testiTrack">
+
+        <!-- Slide 1 -->
+        <div class="testi-slide">
+          <div class="testi-card">
+            <div class="testi-source">
+              <div class="testi-source-icon src-linkedin">in</div>
+              <span class="testi-stars">★★★★★</span>
+            </div>
+            <span class="testi-open">"</span>
+            <p class="testi-text">Most advisors give you frameworks. Coach Murali gives you the truth — and that's a much harder gift. Every conversation was uncomfortable. All of them moved the company forward.</p>
+            <div class="testi-rule"></div>
+            <p class="testi-name">Rajesh Subramanian</p>
+            <p class="testi-role">Founder, SuiteAI | AI-Powered C-Suite for SMEs<br>Advisory Board Member</p>
+          </div>
+          <div class="testi-card">
+            <div class="testi-source">
+              <div class="testi-source-icon src-linkedin">in</div>
+              <span class="testi-stars">★★★★★</span>
+            </div>
+            <span class="testi-open">"</span>
+            <p class="testi-text">His strategic guidance wasn't just theoretical — it was actionable, tailored, and game-changing. Murali has an uncanny ability to simplify complex challenges. His coaching reshaped how we approach problems, turning obstacles into opportunities.</p>
+            <div class="testi-rule"></div>
+            <p class="testi-name">Dr. Fazlul Rahman</p>
+            <p class="testi-role">SEO Consultant & AI Strategist | HEY SEARCH & Hey Group of Companies<br>Dubai's Leading Digital Marketing Visionary 2025</p>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="testi-slide">
+          <div class="testi-card">
+            <div class="testi-source">
+              <div class="testi-source-icon src-google">G</div>
+              <span class="testi-stars">★★★★★</span>
+            </div>
+            <span class="testi-open">"</span>
+            <p class="testi-text">Every minute one spends with Coach Murali provides invaluable lessons both in business and life. He asks the right questions that we might fear asking ourselves — and gives us a totally different perspective about ourselves and our business.</p>
+            <div class="testi-rule"></div>
+            <p class="testi-name">Bhargav Sundaram</p>
+            <p class="testi-role">Local Guide · Google Review</p>
+          </div>
+          <div class="testi-card">
+            <div class="testi-source">
+              <div class="testi-source-icon src-google">G</div>
+              <span class="testi-stars">★★★★★</span>
+            </div>
+            <span class="testi-open">"</span>
+            <p class="testi-text">Coach Murali is a fantastic business and leadership mentor. With over 3 decades of entrepreneurial experience, Coach knows what works and what doesn't. The perfect mentor for startups, the perfect coach for leadership management.</p>
+            <div class="testi-rule"></div>
+            <p class="testi-name">Priya Ravichandran</p>
+            <p class="testi-role">Google Review</p>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="testi-slide">
+          <div class="testi-card">
+            <div class="testi-source">
+              <div class="testi-source-icon src-linkedin">in</div>
+              <span class="testi-stars">★★★★★</span>
+            </div>
+            <span class="testi-open">"</span>
+            <p class="testi-text">An undoubtedly competent authority that you should resort to if you wish to take your business to the next level as you eliminate losses and debt.</p>
+            <div class="testi-rule"></div>
+            <p class="testi-name">Dr. Diptanshu Das</p>
+            <p class="testi-role">Paediatric Neurologist | Founder, Incredible Doctor<br>Founder, Institute of NeuroDevelopment</p>
+          </div>
+          <div class="testi-card">
+            <div class="testi-source">
+              <div class="testi-source-icon src-linkedin">in</div>
+              <span class="testi-stars">★★★★★</span>
+            </div>
+            <span class="testi-open">"</span>
+            <p class="testi-text">I attended the webinar "Upturn Your Business to Profit" by Coach Murali. He has thorough knowledge on this subject. He learned excellent business running secrets. I am sure he will be of great help to any business in debt.</p>
+            <div class="testi-rule"></div>
+            <p class="testi-name">Laxmikant Surve</p>
+            <p class="testi-role">CEO & Founder, LMS Architects & Property Valuers<br>IGBC AP · BNI Member · IBBI Registered Valuer</p>
+          </div>
+        </div>
+
+        <!-- Slide 4 — solo card centered -->
+        <div class="testi-slide" style="grid-template-columns:1fr;">
+          <div class="testi-card" style="max-width:640px; margin:0 auto; width:100%;">
+            <div class="testi-source">
+              <div class="testi-source-icon src-linkedin">in</div>
+              <span class="testi-stars">★★★★★</span>
+            </div>
+            <span class="testi-open">"</span>
+            <p class="testi-text">Coach Murali has always been abundant and benevolent in his practice. I personally treat Murali sir as my personal Yoda — my walking Library. If Growth, Alignment, Mastery, Success and Profits are what you seek, then your search ends here.</p>
+            <div class="testi-rule"></div>
+            <p class="testi-name">Aditya Mhatre</p>
+            <p class="testi-role">Leadership Development | Capability Building | Strategic L&D<br>AI-based Business Transformation | Executive Coaching</p>
+          </div>
+        </div>
+
+      </div><!-- /track -->
+
+      <div class="testi-nav">
+        <button class="t-btn" onclick="testiPrev()">&#8592;</button>
+        <button class="t-dot active" onclick="testiGo(0)"></button>
+        <button class="t-dot" onclick="testiGo(1)"></button>
+        <button class="t-dot" onclick="testiGo(2)"></button>
+        <button class="t-dot" onclick="testiGo(3)"></button>
+        <span class="testi-count" id="testiCount">1 / 4</span>
+        <button class="t-btn" onclick="testiNext()">&#8594;</button>
       </div>
     </div>
   </div>
@@ -674,6 +854,19 @@ function carouselNext(){goSlide((cur+1)%total);}
 function carouselPrev(){goSlide((cur-1+total)%total);}
 // Auto-advance
 setInterval(()=>carouselNext(),5000);
+
+// Testimonial carousel
+let tc = 0; const tt = 4;
+function testiGo(n) {
+  tc = n;
+  document.getElementById('testiTrack').style.transform = `translateX(-${tc * 100}%)`;
+  document.querySelectorAll('.t-dot').forEach((d,i) => d.classList.toggle('active', i === tc));
+  document.getElementById('testiCount').textContent = `${tc+1} / ${tt}`;
+}
+function testiNext() { testiGo((tc+1)%tt); }
+function testiPrev() { testiGo((tc-1+tt)%tt); }
+setInterval(() => testiNext(), 6000);
+
 </script>
 </body>
 </html>
