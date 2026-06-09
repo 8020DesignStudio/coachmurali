@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Inner Game of Business Growth™ | Coach Murali</title>
-<meta name="description" content="A two-day residential experiential immersion program for business owners who want to unlock their next level of growth. Coach Murali — 45 years of business coaching expertise.">
+<meta name="description" content="A two-day residential experiential immersion program for business owners who want to unlock their next level of growth. Coach Murali, 45 years of business coaching expertise.">
 <meta property="og:title" content="The Inner Game of Business Growth™ | Coach Murali">
 <meta property="og:description" content="A two-day residential experience for serious business owners.">
 <meta property="og:type" content="website">
@@ -50,8 +50,13 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 .d1{transition-delay:0.1s;}.d2{transition-delay:0.2s;}.d3{transition-delay:0.3s;}.d4{transition-delay:0.4s;}.d5{transition-delay:0.5s;}
 
 /* ── TYPE ── */
-.lbl{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);display:block;}
+.lbl{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:600;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);display:block;}
 .gold-rule{width:48px;height:2px;background:var(--gold);margin:16px 0 28px;}
+/* Green labels on light backgrounds */
+#problem .lbl,#reframe .lbl,#coach .lbl,#experience .lbl,#testi .lbl,#cost .lbl {
+  color: var(--g-mid);
+}
+
 .wrap{max-width:1140px;margin:0 auto;padding:100px 5%;}
 
 /* ── NAV ── */
@@ -85,9 +90,9 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 .hero-pretag span{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);}
 .hero-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,5.8vw,78px);font-weight:700;line-height:1.04;color:var(--cream);letter-spacing:-0.025em;margin-bottom:4px;}
 .hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,2.8vw,40px);font-style:italic;font-weight:400;color:var(--gold-lt);margin:8px 0 32px;}
-.hero-body{font-size:17px;color:rgba(251,247,239,0.65);font-weight:300;line-height:1.85;margin-bottom:4px;}
+.hero-body{font-size:20px;color:rgba(251,247,239,0.65);font-weight:300;line-height:1.85;margin-bottom:4px;}
 .hero-bq{margin:24px 0 44px;padding:20px 0 20px 28px;border-left:2px solid var(--gold);font-family:'Cormorant Garamond',serif;font-size:clamp(19px,1.9vw,25px);font-style:italic;font-weight:500;color:rgba(242,234,214,0.88);line-height:1.55;}
-/* Hero right — Unsplash image */
+/* Hero right, Unsplash image */
 .hero-right{position:relative;z-index:2;overflow:hidden;}
 .hero-right img.hero-scene{width:100%;height:100%;object-fit:cover;object-position:center;display:block;opacity:0.7;transition:transform 8s ease;transform:scale(1.05);}
 .hero-right:hover img.hero-scene{transform:scale(1);}
@@ -97,8 +102,8 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 /* ════ PROBLEM ════ */
 #problem{background:var(--white);}
 .problem-inner{display:grid;grid-template-columns:1fr 380px;gap:72px;align-items:center;}
-.prob-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,4vw,54px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;}
-.prob-body{font-size:17px;color:var(--ink-mid);font-weight:300;line-height:1.88;margin-bottom:18px;}
+.prob-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(37px,4.3vw,57px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;}
+.prob-body{font-size:20px;color:#060607;font-weight:300;line-height:1.88;margin-bottom:18px;}
 .prob-body strong{color:var(--g-deep);font-weight:600;}
 /* Stat cards with hover */
 .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--rule);border:1px solid var(--rule);margin-top:40px;}
@@ -111,24 +116,24 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 .insight-card::after{content:'"';position:absolute;top:-20px;right:12px;font-family:'Cormorant Garamond',serif;font-size:180px;color:var(--gold);opacity:0.055;line-height:1;pointer-events:none;}
 .insight-icon{font-size:36px;margin-bottom:16px;display:block;opacity:0.9;}
 .insight-q{font-family:'Cormorant Garamond',serif;font-size:clamp(19px,2vw,25px);font-style:italic;font-weight:600;color:var(--gold-lt);line-height:1.5;margin-bottom:16px;position:relative;z-index:1;}
-.insight-b{font-size:14px;color:rgba(251,247,239,0.6);font-weight:300;line-height:1.8;position:relative;z-index:1;}
+.insight-b{font-size:17px;color:rgba(251,247,239,0.6);font-weight:300;line-height:1.8;position:relative;z-index:1;}
 
 /* ════ REFRAME ════ */
 #reframe{background:var(--cream-w);}
 .reframe-inner{display:grid;grid-template-columns:1fr 420px;gap:72px;align-items:start;}
 .reframe-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,4vw,54px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;margin-bottom:10px;}
-.reframe-sub{font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;color:var(--ink-mid);margin-bottom:36px;}
+.reframe-sub{font-family:'Cormorant Garamond',serif;font-size:21px;font-style:italic;color:var(--ink-mid);margin-bottom:36px;}
 .barriers{list-style:none;}
 .barrier-item{display:grid;grid-template-columns:48px 1fr;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid rgba(200,152,30,0.18);cursor:default;transition:padding-left 0.2s;}
 .barrier-item:last-child{border-bottom:none;}
 .barrier-item:hover{padding-left:6px;}
 .barrier-n{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:700;color:var(--gold);line-height:1;}
-.barrier-t{font-size:16px;color:var(--ink-mid);font-weight:400;line-height:1.5;}
+.barrier-t{font-size:19px;color:var(--ink-mid);font-weight:400;line-height:1.5;}
 /* CTA box right column */
 .reframe-cta{background:var(--g-deep);padding:52px 40px;position:relative;overflow:hidden;align-self:start;}
 .reframe-cta::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
 .rc-mini{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:0.26em;text-transform:uppercase;color:rgba(200,152,30,0.5);display:block;margin-bottom:16px;position:relative;z-index:2;}
-.rc-body{font-size:15px;color:rgba(251,247,239,0.65);font-weight:300;line-height:1.82;margin-bottom:18px;position:relative;z-index:2;}
+.rc-body{font-size:18px;color:rgba(251,247,239,0.65);font-weight:300;line-height:1.82;margin-bottom:18px;position:relative;z-index:2;}
 .rc-prog{font-family:'Cormorant Garamond',serif;font-size:clamp(18px,2vw,24px);font-weight:700;color:var(--gold-lt);letter-spacing:0.06em;display:block;margin:0 0 32px;line-height:1.3;position:relative;z-index:2;}
 
 /* ════ COACH ════ */
@@ -140,7 +145,7 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 .coach-photo:hover::after{bottom:-8px;right:-8px;}
 .coach-name{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,4vw,56px);font-weight:700;color:var(--gold);line-height:1.05;letter-spacing:-0.02em;}
 .coach-title{font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-soft);margin:6px 0 26px;}
-.coach-body{font-size:17px;color:var(--ink-mid);font-weight:300;line-height:1.88;margin-bottom:18px;}
+.coach-body{font-size:20px;color:#060607;font-weight:300;line-height:1.88;margin-bottom:18px;}
 /* Pillars with icons */
 .pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--rule);border:1px solid var(--rule-s);margin:28px 0;}
 .pillar{padding:20px 12px;text-align:center;background:var(--cream-w);border-right:1px solid var(--rule);transition:background 0.25s,transform 0.25s;cursor:default;}
@@ -152,7 +157,7 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 .pillar:hover .pillar-name{color:var(--gold-lt);}
 .truth-box{background:var(--g-deep);border-left:3px solid var(--gold);padding:26px 30px;margin:26px 0 38px;position:relative;overflow:hidden;}
 .truth-mini{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,152,30,0.55);display:block;margin-bottom:8px;}
-.truth-q{font-family:'Cormorant Garamond',serif;font-size:21px;font-style:italic;font-weight:600;color:var(--gold-lt);}
+.truth-q{font-family:'Cormorant Garamond',serif;font-size:24px;font-style:italic;font-weight:600;color:var(--gold-lt);}
 
 /* ════ WHAT IT IS ════ */
 #whatitis{position:relative;overflow:hidden;}
@@ -161,8 +166,8 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 .whatitis-bg img{width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(0.18) saturate(0.4);}
 .whatitis-bg::after{content:'';position:absolute;inset:0;background:var(--g-deep);opacity:0.82;}
 #whatitis .wrap{position:relative;z-index:2;}
-.whatitis-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,54px);font-weight:700;color:var(--gold-lt);line-height:1.08;letter-spacing:-0.02em;max-width:760px;margin-bottom:10px;}
-.whatitis-sub{font-size:17px;color:rgba(251,247,239,0.62);font-weight:300;max-width:580px;line-height:1.85;margin-bottom:52px;}
+.whatitis-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(35px,4.3vw,57px);font-weight:700;color:var(--gold-lt);line-height:1.08;letter-spacing:-0.02em;max-width:760px;margin-bottom:10px;}
+.whatitis-sub{font-size:20px;color:rgba(251,247,239,0.62);font-weight:300;max-width:580px;line-height:1.85;margin-bottom:52px;}
 .cards-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--rule-s);gap:0;}
 .nope-card{padding:44px 24px;border-right:1px solid var(--rule);text-align:center;transition:background 0.28s,transform 0.28s;cursor:default;}
 .nope-card:hover{background:rgba(255,255,255,0.06);transform:translateY(-4px);}
@@ -173,11 +178,11 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 .yes-card:hover{background:rgba(200,152,30,0.18);transform:translateY(-4px);}
 .yes-icon{font-size:22px;display:block;margin-bottom:16px;color:var(--gold-lt);}
 .yes-badge{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-lt);display:block;margin-bottom:10px;}
-.yes-text{font-size:14px;font-weight:300;color:rgba(251,247,239,0.82);line-height:1.75;}
+.yes-text{font-size:17px;font-weight:300;color:rgba(251,247,239,0.82);line-height:1.75;}
 
 /* ════ EXPERIENCE / CAROUSEL ════ */
 #experience{background:var(--cream);}
-.exp-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,4vw,54px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;}
+.exp-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(37px,4.3vw,57px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;}
 .carousel-wrap{position:relative;margin-top:48px;overflow:hidden;}
 .carousel-track{display:flex;transition:transform 0.5s cubic-bezier(0.4,0,0.2,1);}
 .carousel-slide{min-width:100%;display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;background:rgba(200,152,30,0.14);border:1px solid var(--rule);}
@@ -193,7 +198,7 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 .exp-card:hover .exp-icon{transform:scale(1.12);}
 .exp-title{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:700;color:var(--g-deep);margin-bottom:10px;position:relative;z-index:1;}
 .exp-card:hover .exp-title{color:var(--gold);}
-.exp-desc{font-size:13px;color:var(--ink-soft);font-style:italic;font-weight:300;line-height:1.65;position:relative;z-index:1;}
+.exp-desc{font-size:16px;color:var(--ink-soft);font-style:italic;font-weight:300;line-height:1.65;position:relative;z-index:1;}
 /* carousel nav */
 .carousel-nav{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:28px;}
 .c-dot{width:8px;height:8px;border-radius:50%;background:rgba(200,152,30,0.3);cursor:pointer;transition:background 0.25s,transform 0.25s;}
@@ -204,10 +209,10 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 /* ════ TAKE BACK ════ */
 #takeback{position:relative;background:var(--g-deep);overflow:hidden;}
 .takeback-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
-.takeback-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,4vw,54px);font-weight:700;color:var(--gold-lt);line-height:1.08;letter-spacing:-0.02em;}
-.takeback-intro{font-family:'Cormorant Garamond',serif;font-size:21px;font-style:italic;font-weight:400;color:rgba(251,247,239,0.68);line-height:1.65;margin:16px 0 40px;}
+.takeback-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(37px,4.3vw,57px);font-weight:700;color:var(--gold-lt);line-height:1.08;letter-spacing:-0.02em;}
+.takeback-intro{font-family:'Cormorant Garamond',serif;font-size:24px;font-style:italic;font-weight:400;color:rgba(251,247,239,0.68);line-height:1.65;margin:16px 0 40px;}
 .outcome-list{list-style:none;}
-.outcome-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid rgba(200,152,30,0.1);font-size:16px;color:rgba(251,247,239,0.78);font-weight:300;line-height:1.6;transition:color 0.2s,padding-left 0.2s;}
+.outcome-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid rgba(200,152,30,0.1);font-size:19px;color:rgba(251,247,239,0.78);font-weight:300;line-height:1.6;transition:color 0.2s,padding-left 0.2s;}
 .outcome-item:last-child{border-bottom:none;}
 .outcome-item:hover{color:var(--cream);padding-left:6px;}
 .check{width:20px;height:20px;border:1.5px solid var(--gold);border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:9px;color:var(--gold);margin-top:2px;transition:background 0.2s;}
@@ -215,12 +220,12 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 
 /* ════ TESTI ════ */
 #testi{background:var(--white);}
-.testi-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,4vw,54px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;}
+.testi-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(37px,4.3vw,57px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;}
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(200,152,30,0.14);border:1px solid var(--rule);margin-top:48px;}
 .testi-card{background:var(--cream);padding:44px 34px;transition:background 0.25s,transform 0.25s;cursor:default;}
 .testi-card:hover{background:var(--cream-w);transform:translateY(-4px);}
 .testi-open{font-family:'Cormorant Garamond',serif;font-size:52px;color:var(--gold);opacity:0.28;line-height:1;margin-bottom:8px;display:block;}
-.testi-text{font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;color:var(--ink-mid);line-height:1.78;margin-bottom:26px;}
+.testi-text{font-family:'Cormorant Garamond',serif;font-size:21px;font-style:italic;color:var(--ink-mid);line-height:1.78;margin-bottom:26px;}
 .testi-rule{height:1px;background:var(--rule);margin-bottom:16px;}
 .testi-name{font-weight:600;font-size:14px;color:var(--g-deep);letter-spacing:0.02em;}
 .testi-role{font-size:12px;color:var(--gold);margin-top:3px;}
@@ -231,14 +236,14 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 .cost-bg img{width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(0.15) saturate(0.3) sepia(0.2);}
 .cost-bg::after{content:'';position:absolute;inset:0;background:var(--cream-w);opacity:0.88;}
 #cost .wrap{position:relative;z-index:2;}
-.cost-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,4vw,54px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;}
-.cost-intro{font-family:'Cormorant Garamond',serif;font-size:18px;font-style:italic;color:var(--ink-mid);font-weight:300;max-width:640px;line-height:1.85;margin:14px 0 48px;}
+.cost-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(37px,4.3vw,57px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;}
+.cost-intro{font-family:'Cormorant Garamond',serif;font-size:21px;font-style:italic;color:var(--ink-mid);font-weight:300;max-width:640px;line-height:1.85;margin:14px 0 48px;}
 .cost-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;background:rgba(200,152,30,0.14);border:1px solid var(--rule);margin-bottom:68px;}
 .cost-card{background:rgba(255,255,255,0.85);padding:40px 16px;text-align:center;transition:background 0.28s,transform 0.28s,box-shadow 0.28s;cursor:default;backdrop-filter:blur(4px);}
 .cost-card:hover{background:var(--white);transform:translateY(-5px);box-shadow:0 16px 40px rgba(0,0,0,0.1);}
 .cost-icon{font-size:30px;display:block;margin-bottom:16px;transition:transform 0.28s;}
 .cost-card:hover .cost-icon{transform:scale(1.18);}
-.cost-text{font-family:'Cormorant Garamond',serif;font-size:15px;font-weight:700;color:var(--g-deep);line-height:1.5;}
+.cost-text{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:var(--g-deep);line-height:1.5;}
 
 /* ════ FINAL CTA ════ */
 #finalcta{position:relative;background:var(--g-deep);text-align:center;overflow:hidden;}
@@ -246,7 +251,7 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 .finalcta-inner{max-width:900px;margin:0 auto;padding:120px 5%;position:relative;z-index:2;}
 .final-bq{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.8vw,50px);font-style:italic;font-weight:600;color:var(--gold-lt);line-height:1.4;margin-bottom:52px;}
 .final-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,2.8vw,38px);font-weight:700;color:var(--cream);margin-bottom:18px;letter-spacing:-0.01em;}
-.final-body{font-size:17px;color:rgba(251,247,239,0.6);font-weight:300;max-width:520px;margin:0 auto 48px;line-height:1.88;}
+.final-body{font-size:20px;color:rgba(251,247,239,0.6);font-weight:300;max-width:520px;margin:0 auto 48px;line-height:1.88;}
 .final-note{font-size:12px;color:rgba(200,152,30,0.42);font-style:italic;margin-top:14px;}
 
 /* ════ FOOTER ════ */
@@ -308,17 +313,13 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
 <section id="hero">
   <div class="grain"></div>
   <div class="hero-left">
-    <div class="hero-pretag rv">
-      <span class="hero-pretag-line"></span>
-      <span>An Experiential Immersion Program for Business Owners</span>
-    </div>
     <h1 class="hero-h1 rv d1">Why Is My Business<br>Not Growing Faster?</h1>
     <p class="hero-sub rv d2">What am I missing?</p>
-    <p class="hero-body rv d2">You are working hard. Your business is growing.<br>Yet, somewhere deep inside, a question lingers —</p>
+    <p class="hero-body rv d2">You are working hard. Your business is growing.<br>Yet, somewhere deep inside, a question lingers ,</p>
     <blockquote class="hero-bq rv d3">"Can my business grow faster, stronger and more profitably than it is today?"</blockquote>
     <div class="rv d4">
-      <a href="https://wa.me/919841049588" class="btn btn-gold" target="_blank" rel="noopener">Apply for Your Seat</a>
-      <span class="btn-note btn-nd">Limited seats. By qualification only.</span>
+      <a href="https://wa.me/919841049588" class="btn btn-gold" target="_blank" rel="noopener">Claim Your Seat</a>
+      <span class="btn-note btn-nd">If you are ready to claim the next version of yourself.<br>Limited Seats. By Qualification Only.</span>
     </div>
   </div>
   <div class="hero-right">
@@ -336,15 +337,15 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
         <h2 class="prob-h2 rv d1">You Are Not Alone.</h2>
         <div class="gold-rule rv d1"></div>
         <p class="prob-body rv d2">Most business owners don't struggle from lack of effort. They struggle because they cannot see the <strong>invisible barriers</strong> quietly limiting their next phase of growth.</p>
-        <p class="prob-body rv d2">The harder you push against a barrier you cannot see — the more energy you burn for less result.</p>
+        <p class="prob-body rv d2">The harder you push against a barrier you cannot see, the more energy you burn for less result.</p>
         <div class="stat-row rv d3">
           <div class="stat-card">
             <span class="stat-num">45+</span>
             <span class="stat-lbl">Years Coaching</span>
           </div>
           <div class="stat-card">
-            <span class="stat-num">100s</span>
-            <span class="stat-lbl">Entrepreneurs</span>
+            <span class="stat-num">300+</span>
+            <span class="stat-lbl">Entrepreneurs Coached</span>
           </div>
           <div class="stat-card">
             <span class="stat-num">1</span>
@@ -355,7 +356,7 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
       <div class="insight-card rv-r d2">
         <span class="insight-icon">💡</span>
         <p class="insight-q">"Business growth happens from the inside out."</p>
-        <p class="insight-b">Having coached hundreds of entrepreneurs across India, Coach Murali has arrived at one unshakeable truth — the ceiling you've hit is not a market problem. It is a leadership problem. And it can be solved.</p>
+        <p class="insight-b">Having coached hundreds of entrepreneurs across India, Coach Murali has arrived at one unshakeable truth, the ceiling you've hit is not a market problem. It is a leadership problem. And it can be solved.</p>
       </div>
     </div>
   </div>
@@ -373,15 +374,15 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
         <ul class="barriers">
           <li class="barrier-item rv"><span class="barrier-n">01</span><span class="barrier-t">The way key decisions are being made inside your business</span></li>
           <li class="barrier-item rv d1"><span class="barrier-n">02</span><span class="barrier-t">The assumptions your business has quietly accepted as normal</span></li>
-          <li class="barrier-item rv d2"><span class="barrier-n">03</span><span class="barrier-t">The habits that once fuelled growth — but now hold it back</span></li>
-          <li class="barrier-item rv d3"><span class="barrier-n">04</span><span class="barrier-t">The opportunities in plain sight — yet invisible to you</span></li>
+          <li class="barrier-item rv d2"><span class="barrier-n">03</span><span class="barrier-t">The habits that once fuelled growth, but now hold it back</span></li>
+          <li class="barrier-item rv d3"><span class="barrier-n">04</span><span class="barrier-t">The opportunities in plain sight, yet invisible to you</span></li>
           <li class="barrier-item rv d4"><span class="barrier-n">05</span><span class="barrier-t">The leader behind the business</span></li>
         </ul>
       </div>
       <div class="reframe-cta rv-r d2">
         <div class="grain"></div>
         <span class="rc-mini">Introducing</span>
-        <p class="rc-body">To help business owners discover and overcome these invisible barriers, Coach Murali has curated a one-of-a-kind Experiential Immersion Program —</p>
+        <p class="rc-body">To help business owners discover and overcome these invisible barriers, Coach Murali has curated a one-of-a-kind Experiential Immersion Program ,</p>
         <span class="rc-prog">THE INNER GAME OF BUSINESS GROWTH™</span>
         <a href="https://wa.me/919841049588" class="btn btn-gold" target="_blank" rel="noopener">Apply for Your Seat</a>
       </div>
@@ -401,7 +402,7 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
         <h2 class="coach-name rv d1">Coach Murali</h2>
         <p class="coach-title rv d1">Business Growth System™</p>
         <div class="gold-rule rv d1"></div>
-        <p class="coach-body rv d2">For over 45 years, Coach Murali has partnered with business owners across industries — helping them cut through complexity, identify growth bottlenecks, improve profitability, and build leadership that lasts.</p>
+        <p class="coach-body rv d2">For over 45 years, Coach Murali has partnered with business owners across industries, helping them cut through complexity, identify growth bottlenecks, improve profitability, and build leadership that lasts.</p>
         <p class="coach-body rv d2">His life's work: building businesses that are</p>
         <div class="pillars rv d3">
           <div class="pillar">
@@ -425,7 +426,7 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
           <span class="truth-mini">One Powerful Truth</span>
           <p class="truth-q">"Business growth happens from the inside out."</p>
         </div>
-        <a href="https://wa.me/919841049588" class="btn btn-dark rv d4" target="_blank" rel="noopener">Apply for Your Seat</a>
+        <a href="https://wa.me/919841049588" class="btn btn-dark rv d4" target="_blank" rel="noopener">Claim Your Seat</a>
       </div>
     </div>
   </div>
@@ -440,7 +441,7 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
   <div class="wrap">
     <span class="lbl rv">The Program</span>
     <h2 class="whatitis-h2 rv d1">A Two-Day Residential Experience<br>Unlike Anything You've Attended Before.</h2>
-    <p class="whatitis-sub rv d2">Designed exclusively for business owners who are ready — not just willing — to unlock their next level of growth.</p>
+    <p class="whatitis-sub rv d2">Designed exclusively for business owners who are ready, not just willing, to unlock their next level of growth.</p>
     <div class="cards-grid rv d2">
       <div class="nope-card">
         <span class="nope-icon">🚫</span>
@@ -460,7 +461,7 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
       <div class="yes-card">
         <span class="yes-icon">✦</span>
         <span class="yes-badge">This IS</span>
-        <p class="yes-text">An immersive experience where business owners learn, challenge, reflect, collaborate — and commit to meaningful, measurable growth.</p>
+        <p class="yes-text">An immersive experience where business owners learn, challenge, reflect, collaborate, and commit to meaningful, measurable growth.</p>
       </div>
     </div>
   </div>
@@ -501,7 +502,7 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
             <div class="exp-hover-img"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80&auto=format&fit=crop" alt=""></div>
             <span class="exp-icon">🧭</span>
             <h3 class="exp-title">Strategic Reflection</h3>
-            <p class="exp-desc">Structured space to think — not just react.</p>
+            <p class="exp-desc">Structured space to think, not just react.</p>
           </div>
           <div class="exp-card">
             <div class="exp-hover-img"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80&auto=format&fit=crop" alt=""></div>
@@ -547,8 +548,8 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
         <h2 class="takeback-h2 rv d1">What You Will Take Back</h2>
         <p class="takeback-intro rv d2">"You will leave with more than notes. You will leave with momentum."</p>
         <div class="rv d3">
-          <a href="https://wa.me/919841049588" class="btn btn-gold" target="_blank" rel="noopener">Apply for Your Seat</a>
-          <span class="btn-note btn-nd">Seats are limited and filled by qualification.</span>
+          <a href="https://wa.me/919841049588" class="btn btn-gold" target="_blank" rel="noopener">Reserve Your Place at the Table</a>
+          <span class="btn-note btn-nd">Where serious business owners have honest conversations.</span>
         </div>
       </div>
       <ul class="outcome-list rv-r d2">
@@ -670,16 +671,16 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
 
         <!-- Slide 1 -->
         <div class="testi-slide">
-          <div class="testi-card">
+                    <div class="testi-card">
             <div class="testi-source">
               <div class="testi-source-icon src-linkedin">in</div>
-              <span class="testi-stars">★★★★★</span>
+              <span class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
             </div>
-            <span class="testi-open">"</span>
-            <p class="testi-text">Most advisors give you frameworks. Coach Murali gives you the truth — and that's a much harder gift. Every conversation was uncomfortable. All of them moved the company forward.</p>
+            <span class="testi-open">&#8220;</span>
+            <p class="testi-text">Results speak his expertise on helping businesses to earn real profits and scale up smoothly. Real star of business success enablement. He helped my business from perish to flourish in style.</p>
             <div class="testi-rule"></div>
-            <p class="testi-name">Rajesh Subramanian</p>
-            <p class="testi-role">Founder, SuiteAI | AI-Powered C-Suite for SMEs<br>Advisory Board Member</p>
+            <p class="testi-name">Chandramouli</p>
+            <p class="testi-role">Founder, Aditya Techno Solutions</p>
           </div>
           <div class="testi-card">
             <div class="testi-source">
@@ -687,7 +688,7 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
               <span class="testi-stars">★★★★★</span>
             </div>
             <span class="testi-open">"</span>
-            <p class="testi-text">His strategic guidance wasn't just theoretical — it was actionable, tailored, and game-changing. Murali has an uncanny ability to simplify complex challenges. His coaching reshaped how we approach problems, turning obstacles into opportunities.</p>
+            <p class="testi-text">His strategic guidance wasn't just theoretical, it was actionable, tailored, and game-changing. Murali has an uncanny ability to simplify complex challenges. His coaching reshaped how we approach problems, turning obstacles into opportunities.</p>
             <div class="testi-rule"></div>
             <p class="testi-name">Dr. Fazlul Rahman</p>
             <p class="testi-role">SEO Consultant & AI Strategist | HEY SEARCH & Hey Group of Companies<br>Dubai's Leading Digital Marketing Visionary 2025</p>
@@ -696,27 +697,16 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
 
         <!-- Slide 2 -->
         <div class="testi-slide">
-          <div class="testi-card">
+                    <div class="testi-card">
             <div class="testi-source">
-              <div class="testi-source-icon src-google">G</div>
-              <span class="testi-stars">★★★★★</span>
+              <div class="testi-source-icon src-linkedin">in</div>
+              <span class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
             </div>
-            <span class="testi-open">"</span>
-            <p class="testi-text">Every minute one spends with Coach Murali provides invaluable lessons both in business and life. He asks the right questions that we might fear asking ourselves — and gives us a totally different perspective about ourselves and our business.</p>
+            <span class="testi-open">&#8220;</span>
+            <p class="testi-text">Working with Coach Murali has been a privilege. His pivotal role in implementing the Bridge Academy Universal 8 Grade System has been instrumental in its success. His exceptional management and collaborative skills are truly commendable. Coach Murali has a unique talent for articulating ideas with confidence and clarity.</p>
             <div class="testi-rule"></div>
-            <p class="testi-name">Bhargav Sundaram</p>
-            <p class="testi-role">Director, Callidai Motor Works</p>
-          </div>
-          <div class="testi-card">
-            <div class="testi-source">
-              <div class="testi-source-icon src-google">G</div>
-              <span class="testi-stars">★★★★★</span>
-            </div>
-            <span class="testi-open">"</span>
-            <p class="testi-text">Coach Murali is a fantastic business and leadership mentor. With over 3 decades of entrepreneurial experience, Coach knows what works and what doesn't. The perfect mentor for startups, the perfect coach for leadership management.</p>
-            <div class="testi-rule"></div>
-            <p class="testi-name">Priya Ravichandran</p>
-            <p class="testi-role">Chartered Accountant</p>
+            <p class="testi-name">RaghuRaman</p>
+            <p class="testi-role">Founder Director, Bridge Academy</p>
           </div>
         </div>
 
@@ -746,7 +736,7 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
           </div>
         </div>
 
-        <!-- Slide 4 — solo card centered -->
+        <!-- Slide 4, solo card centered -->
         <div class="testi-slide" style="grid-template-columns:1fr;">
           <div class="testi-card" style="max-width:640px; margin:0 auto; width:100%;">
             <div class="testi-source">
@@ -754,7 +744,7 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
               <span class="testi-stars">★★★★★</span>
             </div>
             <span class="testi-open">"</span>
-            <p class="testi-text">Coach Murali has always been abundant and benevolent in his practice. I personally treat Murali sir as my personal Yoda — my walking Library. If Growth, Alignment, Mastery, Success and Profits are what you seek, then your search ends here.</p>
+            <p class="testi-text">Coach Murali has always been abundant and benevolent in his practice. I personally treat Murali sir as my personal Yoda, my walking Library. If Growth, Alignment, Mastery, Success and Profits are what you seek, then your search ends here.</p>
             <div class="testi-rule"></div>
             <p class="testi-name">Aditya Mhatre</p>
             <p class="testi-role">Leadership Development | Capability Building | Strategic L&D<br>AI-based Business Transformation | Executive Coaching</p>
@@ -785,7 +775,7 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
     <span class="lbl rv">Ask Yourself</span>
     <h2 class="cost-h2 rv d1">What Is the Cost of Not Growing?</h2>
     <div class="gold-rule rv d1"></div>
-    <p class="cost-intro rv d2">Every year of delayed growth carries a hidden price that rarely appears on a balance sheet — but is paid nonetheless.</p>
+    <p class="cost-intro rv d2">Every year of delayed growth carries a hidden price that rarely appears on a balance sheet, but is paid nonetheless.</p>
     <div class="cost-grid">
       <div class="cost-card rv"><span class="cost-icon">⏳</span><p class="cost-text">Opportunities that never return</p></div>
       <div class="cost-card rv d1"><span class="cost-icon">📉</span><p class="cost-text">Profits that could have been earned</p></div>
@@ -800,12 +790,12 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
 <section id="finalcta">
   <div class="grain"></div>
   <div class="finalcta-inner">
-    <blockquote class="final-bq rv">"If your business is ready for the next level of growth…<br><em>Perhaps it's time you were too.</em>"</blockquote>
+    <blockquote class="final-bq rv">If you already think<br>that this is for you,<br><em>trust that knowing.</em><br>Sign up for Selection.</blockquote>
     <div class="gold-rule rv" style="margin:0 auto 44px;"></div>
-    <h2 class="final-h2 rv d1">This Program Is Not for Everyone.<br>It Is for You — If You Are Ready.</h2>
+    <h2 class="final-h2 rv d1">This Program Is Not for Everyone.<br>It Is for You, If You Are Ready.</h2>
     <p class="final-body rv d2">Seats are limited. This is a by-qualification program. If you are a business owner serious about your next phase of growth, the first step is a conversation.</p>
     <div class="rv d3">
-      <a href="https://wa.me/919841049588" class="btn btn-gold" target="_blank" rel="noopener">Apply for Your Seat</a>
+      <a href="https://wa.me/919841049588" class="btn btn-gold" target="_blank" rel="noopener">Sign Up for Selection</a>
       <p class="final-note">Connect on WhatsApp. No hard sell. Just a conversation.</p>
     </div>
   </div>
@@ -825,7 +815,7 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
       <div class="footer-pillars" style="margin-top:6px;opacity:0.6;">Bigger · Better · Bankable · Debt-Free</div>
     </div>
   </div>
-  <div class="footer-bottom">© 2025 Coach Murali — Business Growth System™. All rights reserved.</div>
+  <div class="footer-bottom">© 2025 Coach Murali, Business Growth System™. All rights reserved.</div>
 </footer>
 
 <script>
