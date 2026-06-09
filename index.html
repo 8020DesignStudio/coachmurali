@@ -10,7 +10,7 @@
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 <style>
 :root {
   --g-deep:   #111D11;
@@ -50,7 +50,7 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 .d1{transition-delay:0.1s;}.d2{transition-delay:0.2s;}.d3{transition-delay:0.3s;}.d4{transition-delay:0.4s;}.d5{transition-delay:0.5s;}
 
 /* ── TYPE ── */
-.lbl{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:600;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);display:block;}
+.lbl{font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:600;letter-spacing:0.26em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:14px;}
 .gold-rule{width:48px;height:2px;background:var(--gold);margin:16px 0 28px;}
 /* Green labels on light backgrounds */
 #problem .lbl,#reframe .lbl,#coach .lbl,#experience .lbl,#testi .lbl,#cost .lbl {
@@ -60,9 +60,9 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 .wrap{max-width:1140px;margin:0 auto;padding:100px 5%;}
 
 /* ── NAV ── */
-#nav{position:fixed;top:0;left:0;right:0;z-index:900;height:68px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;background:var(--g-deep);border-bottom:1px solid var(--rule-s);transition:box-shadow 0.3s;}
+#nav{position:fixed;top:0;left:0;right:0;z-index:900;height:44px;display:flex;align-items:center;justify-content:space-between;padding:0 5%;background:var(--g-deep);border-bottom:1px solid var(--rule-s);transition:box-shadow 0.3s;}
 #nav.scrolled{box-shadow:0 2px 40px rgba(0,0,0,0.7);}
-.nav-logo img{height:44px;width:auto;display:block;}
+.nav-logo img{height:32px;width:auto;display:block;}
 .nav-links{display:flex;gap:36px;list-style:none;}
 .nav-links a{font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.16em;text-transform:uppercase;color:rgba(251,247,239,0.55);text-decoration:none;transition:color 0.2s;}
 .nav-links a:hover{color:var(--gold-lt);}
@@ -70,28 +70,28 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 .hbg span{display:block;width:22px;height:1.5px;background:var(--gold);}
 
 /* ── BUTTONS ── */
-.btn{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:12px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;padding:14px 38px;text-decoration:none;cursor:pointer;border:none;position:relative;overflow:hidden;transition:transform 0.22s ease,box-shadow 0.22s ease,background 0.22s ease;}
+.btn{display:inline-block;font-family:'Barlow Condensed',sans-serif;font-size:14px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;padding:14px 38px;text-decoration:none;cursor:pointer;border:none;position:relative;overflow:hidden;transition:transform 0.22s ease,box-shadow 0.22s ease,background 0.22s ease;}
 .btn::before{content:'';position:absolute;top:0;left:-110%;width:60%;height:100%;background:rgba(255,255,255,0.2);transform:skewX(-18deg);transition:left 0.45s ease;}
 .btn:hover::before{left:160%;}
 .btn-gold{background:var(--gold);color:var(--g-deep);}
 .btn-gold:hover{background:var(--gold-lt);transform:translateY(-2px);box-shadow:0 12px 30px rgba(200,152,30,0.45);}
 .btn-dark{background:var(--g-deep);color:var(--gold-lt);border:1.5px solid var(--rule-s);}
 .btn-dark:hover{background:var(--g-rich);transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,0.35);}
-.btn-note{display:block;font-size:11px;font-style:italic;margin-top:11px;letter-spacing:0.03em;}
+.btn-note{display:block;font-size:13px;font-style:italic;margin-top:11px;letter-spacing:0.03em;}
 .btn-nd{color:rgba(251,247,239,0.38);}
 .btn-nl{color:var(--ink-soft);}
 
 /* ════ HERO ════ */
-#hero{position:relative;background:var(--g-deep);min-height:100vh;padding-top:68px;display:grid;grid-template-columns:52% 48%;overflow:hidden;}
-#hero::before{content:'INNER\A GAME';white-space:pre;position:absolute;right:-1%;bottom:-2%;font-family:'Cormorant Garamond',serif;font-size:clamp(110px,15vw,200px);font-weight:700;line-height:0.88;color:rgba(200,152,30,0.042);letter-spacing:-0.04em;pointer-events:none;z-index:0;text-align:right;}
-.hero-left{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;padding:80px 5% 80px 8%;}
+#hero{position:relative;background:var(--g-deep);min-height:50vh;padding-top:44px;display:grid;grid-template-columns:52% 48%;overflow:hidden;}
+#hero::before{content:'INNER\A GAME';white-space:pre;position:absolute;right:-1%;bottom:-2%;font-family:'Barlow',sans-serif;font-size:clamp(110px,15vw,200px);font-weight:700;line-height:0.88;color:rgba(200,152,30,0.042);letter-spacing:-0.04em;pointer-events:none;z-index:0;text-align:right;}
+.hero-left{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:center;padding:40px 5% 40px 8%;}
 .hero-pretag{display:inline-flex;align-items:center;gap:12px;margin-bottom:36px;width:fit-content;}
 .hero-pretag-line{width:32px;height:1px;background:var(--gold);flex-shrink:0;}
 .hero-pretag span{font-family:'Barlow Condensed',sans-serif;font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);}
-.hero-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,5.8vw,78px);font-weight:700;line-height:1.04;color:var(--cream);letter-spacing:-0.025em;margin-bottom:4px;}
-.hero-sub{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,2.8vw,40px);font-style:italic;font-weight:400;color:var(--gold-lt);margin:8px 0 32px;}
-.hero-body{font-size:20px;color:rgba(251,247,239,0.65);font-weight:300;line-height:1.85;margin-bottom:4px;}
-.hero-bq{margin:24px 0 44px;padding:20px 0 20px 28px;border-left:2px solid var(--gold);font-family:'Cormorant Garamond',serif;font-size:clamp(19px,1.9vw,25px);font-style:italic;font-weight:500;color:rgba(242,234,214,0.88);line-height:1.55;}
+.hero-h1{font-family:'Barlow',sans-serif;font-size:clamp(44px,5.8vw,78px);font-weight:700;line-height:1.04;color:var(--cream);letter-spacing:-0.025em;margin-bottom:4px;}
+.hero-sub{font-family:'Barlow',sans-serif;font-size:clamp(24px,2.8vw,40px);font-style:italic;font-weight:400;color:var(--gold-lt);margin:8px 0 32px;}
+.hero-body{font-size:20px;color:#FFFFFF;font-weight:300;line-height:1.85;margin-bottom:4px;}
+.hero-bq{margin:24px 0 44px;padding:20px 0 20px 28px;border-left:2px solid var(--gold);font-family:'Barlow',sans-serif;font-size:clamp(19px,1.9vw,25px);font-style:italic;font-weight:500;color:#FFFFFF;line-height:1.55;}
 /* Hero right, Unsplash image */
 .hero-right{position:relative;z-index:2;overflow:hidden;}
 .hero-right img.hero-scene{width:100%;height:100%;object-fit:cover;object-position:center;display:block;opacity:0.7;transition:transform 8s ease;transform:scale(1.05);}
@@ -102,48 +102,52 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 /* ════ PROBLEM ════ */
 #problem{background:var(--white);}
 .problem-inner{display:grid;grid-template-columns:1fr 380px;gap:72px;align-items:center;}
-.prob-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(37px,4.3vw,57px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;}
+.prob-h2{font-family:'Barlow',sans-serif;font-size:clamp(37px,4.3vw,57px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;}
 .prob-body{font-size:20px;color:#060607;font-weight:300;line-height:1.88;margin-bottom:18px;}
 .prob-body strong{color:var(--g-deep);font-weight:600;}
 /* Stat cards with hover */
 .stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--rule);border:1px solid var(--rule);margin-top:40px;}
 .stat-card{background:var(--white);padding:24px 16px;text-align:center;transition:background 0.25s,transform 0.25s;}
 .stat-card:hover{background:var(--cream-w);transform:translateY(-3px);}
-.stat-num{font-family:'Cormorant Garamond',serif;font-size:52px;font-weight:700;color:var(--gold);line-height:1;display:block;}
+.stat-num{font-family:'Barlow',sans-serif;font-size:52px;font-weight:700;color:var(--gold);line-height:1;display:block;}
 .stat-lbl{font-family:'Barlow Condensed',sans-serif;font-size:11px;letter-spacing:0.12em;color:var(--ink-soft);text-transform:uppercase;margin-top:6px;display:block;}
 /* Insight visual card */
 .insight-card{background:var(--g-deep);padding:44px 38px;position:relative;overflow:hidden;}
-.insight-card::after{content:'"';position:absolute;top:-20px;right:12px;font-family:'Cormorant Garamond',serif;font-size:180px;color:var(--gold);opacity:0.055;line-height:1;pointer-events:none;}
+.insight-card::after{content:'"';position:absolute;top:-20px;right:12px;font-family:'Barlow',sans-serif;font-size:180px;color:var(--gold);opacity:0.055;line-height:1;pointer-events:none;}
 .insight-icon{font-size:36px;margin-bottom:16px;display:block;opacity:0.9;}
-.insight-q{font-family:'Cormorant Garamond',serif;font-size:clamp(19px,2vw,25px);font-style:italic;font-weight:600;color:var(--gold-lt);line-height:1.5;margin-bottom:16px;position:relative;z-index:1;}
+.insight-q{font-family:'Barlow',sans-serif;font-size:clamp(19px,2vw,25px);font-style:italic;font-weight:600;color:var(--gold-lt);line-height:1.5;margin-bottom:16px;position:relative;z-index:1;}
 .insight-b{font-size:17px;color:rgba(251,247,239,0.6);font-weight:300;line-height:1.8;position:relative;z-index:1;}
 
 /* ════ REFRAME ════ */
-#reframe{background:var(--cream-w);}
+#reframe{background:var(--cream-w);position:relative;overflow:hidden;}
+.reframe-bg{position:absolute;inset:0;z-index:0;}
+.reframe-bg img{width:100%;height:100%;object-fit:cover;object-position:center;}
+.reframe-bg::after{content:'';position:absolute;inset:0;background:var(--cream-w);opacity:0.80;}
+#reframe .wrap{position:relative;z-index:2;}
 .reframe-inner{display:grid;grid-template-columns:1fr 420px;gap:72px;align-items:start;}
-.reframe-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(34px,4vw,54px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;margin-bottom:10px;}
-.reframe-sub{font-family:'Cormorant Garamond',serif;font-size:21px;font-style:italic;color:var(--ink-mid);margin-bottom:36px;}
+.reframe-h2{font-family:'Barlow',sans-serif;font-size:clamp(34px,4vw,54px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;margin-bottom:10px;}
+.reframe-sub{font-family:'Barlow',sans-serif;font-size:21px;font-style:italic;color:var(--ink-mid);margin-bottom:36px;}
 .barriers{list-style:none;}
 .barrier-item{display:grid;grid-template-columns:48px 1fr;align-items:baseline;gap:16px;padding:18px 0;border-bottom:1px solid rgba(200,152,30,0.18);cursor:default;transition:padding-left 0.2s;}
 .barrier-item:last-child{border-bottom:none;}
 .barrier-item:hover{padding-left:6px;}
-.barrier-n{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:700;color:var(--gold);line-height:1;}
+.barrier-n{font-family:'Barlow',sans-serif;font-size:32px;font-weight:700;color:var(--gold);line-height:1;}
 .barrier-t{font-size:19px;color:var(--ink-mid);font-weight:400;line-height:1.5;}
 /* CTA box right column */
 .reframe-cta{background:var(--g-deep);padding:52px 40px;position:relative;overflow:hidden;align-self:start;}
 .reframe-cta::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
 .rc-mini{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:0.26em;text-transform:uppercase;color:rgba(200,152,30,0.5);display:block;margin-bottom:16px;position:relative;z-index:2;}
 .rc-body{font-size:18px;color:rgba(251,247,239,0.65);font-weight:300;line-height:1.82;margin-bottom:18px;position:relative;z-index:2;}
-.rc-prog{font-family:'Cormorant Garamond',serif;font-size:clamp(18px,2vw,24px);font-weight:700;color:var(--gold-lt);letter-spacing:0.06em;display:block;margin:0 0 32px;line-height:1.3;position:relative;z-index:2;}
+.rc-prog{font-family:'Barlow',sans-serif;font-size:clamp(18px,2vw,24px);font-weight:700;color:var(--gold-lt);letter-spacing:0.06em;display:block;margin:0 0 32px;line-height:1.3;position:relative;z-index:2;}
 
 /* ════ COACH ════ */
 #coach{background:var(--white);}
 .coach-inner{display:grid;grid-template-columns:380px 1fr;gap:88px;align-items:start;}
 .coach-photo{position:relative;}
-.coach-photo img{width:100%;display:block;}
+.coach-photo img{width:100%;display:block;object-fit:contain;object-position:center bottom;background:transparent;}
 .coach-photo::after{content:'';position:absolute;bottom:-14px;right:-14px;width:100%;height:100%;border:2px solid var(--rule-s);pointer-events:none;transition:bottom 0.3s,right 0.3s;}
 .coach-photo:hover::after{bottom:-8px;right:-8px;}
-.coach-name{font-family:'Cormorant Garamond',serif;font-size:clamp(38px,4vw,56px);font-weight:700;color:var(--gold);line-height:1.05;letter-spacing:-0.02em;}
+.coach-name{font-family:'Barlow',sans-serif;font-size:clamp(38px,4vw,56px);font-weight:700;color:var(--gold);line-height:1.05;letter-spacing:-0.02em;}
 .coach-title{font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--ink-soft);margin:6px 0 26px;}
 .coach-body{font-size:20px;color:#060607;font-weight:300;line-height:1.88;margin-bottom:18px;}
 /* Pillars with icons */
@@ -151,38 +155,38 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 .pillar{padding:20px 12px;text-align:center;background:var(--cream-w);border-right:1px solid var(--rule);transition:background 0.25s,transform 0.25s;cursor:default;}
 .pillar:last-child{border-right:none;}
 .pillar:hover{background:var(--g-deep);transform:translateY(-3px);}
-.pillar-icon{font-size:24px;display:block;margin-bottom:8px;transition:transform 0.25s;}
+.pillar-icon{font-size:29px;display:block;margin-bottom:8px;transition:transform 0.25s;filter:grayscale(1) brightness(0.3);}
 .pillar:hover .pillar-icon{transform:scale(1.15);}
-.pillar-name{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:700;color:var(--gold);display:block;}
+.pillar-name{font-family:'Barlow',sans-serif;font-size:16px;font-weight:700;color:var(--g-mid);display:block;}
 .pillar:hover .pillar-name{color:var(--gold-lt);}
 .truth-box{background:var(--g-deep);border-left:3px solid var(--gold);padding:26px 30px;margin:26px 0 38px;position:relative;overflow:hidden;}
 .truth-mini{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(200,152,30,0.55);display:block;margin-bottom:8px;}
-.truth-q{font-family:'Cormorant Garamond',serif;font-size:24px;font-style:italic;font-weight:600;color:var(--gold-lt);}
+.truth-q{font-family:'Barlow',sans-serif;font-size:24px;font-style:italic;font-weight:600;color:var(--gold-lt);}
 
 /* ════ WHAT IT IS ════ */
 #whatitis{position:relative;overflow:hidden;}
 /* Background image overlay */
 .whatitis-bg{position:absolute;inset:0;z-index:0;}
 .whatitis-bg img{width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(0.18) saturate(0.4);}
-.whatitis-bg::after{content:'';position:absolute;inset:0;background:var(--g-deep);opacity:0.82;}
+.whatitis-bg::after{content:'';position:absolute;inset:0;background:var(--g-deep);opacity:0.67;}
 #whatitis .wrap{position:relative;z-index:2;}
-.whatitis-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(35px,4.3vw,57px);font-weight:700;color:var(--gold-lt);line-height:1.08;letter-spacing:-0.02em;max-width:760px;margin-bottom:10px;}
-.whatitis-sub{font-size:20px;color:rgba(251,247,239,0.62);font-weight:300;max-width:580px;line-height:1.85;margin-bottom:52px;}
+.whatitis-h2{font-family:'Barlow',sans-serif;font-size:clamp(35px,4.3vw,57px);font-weight:700;color:var(--gold-lt);line-height:1.08;letter-spacing:-0.02em;max-width:760px;margin-bottom:10px;}
+.whatitis-sub{font-size:20px;color:#FFFFFF;font-weight:300;max-width:580px;line-height:1.85;margin-bottom:52px;}
 .cards-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--rule-s);gap:0;}
 .nope-card{padding:44px 24px;border-right:1px solid var(--rule);text-align:center;transition:background 0.28s,transform 0.28s;cursor:default;}
 .nope-card:hover{background:rgba(255,255,255,0.06);transform:translateY(-4px);}
-.nope-icon{font-size:20px;margin-bottom:16px;display:block;color:rgba(200,152,30,0.4);}
+.nope-icon{margin-bottom:16px;display:block;color:rgba(200,152,30,0.4);}
 .nope-badge{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(251,247,239,0.28);display:block;margin-bottom:10px;}
-.nope-text{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:700;color:var(--cream);}
+.nope-text{font-family:'Barlow',sans-serif;font-size:20px;font-weight:700;color:var(--cream);}
 .yes-card{padding:44px 24px;text-align:center;background:var(--gold-dim);border-top:3px solid var(--gold);transition:background 0.28s,transform 0.28s;cursor:default;}
 .yes-card:hover{background:rgba(200,152,30,0.18);transform:translateY(-4px);}
-.yes-icon{font-size:22px;display:block;margin-bottom:16px;color:var(--gold-lt);}
+.yes-icon{display:block;margin-bottom:16px;color:var(--gold-lt);}
 .yes-badge{font-family:'Barlow Condensed',sans-serif;font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold-lt);display:block;margin-bottom:10px;}
 .yes-text{font-size:17px;font-weight:300;color:rgba(251,247,239,0.82);line-height:1.75;}
 
 /* ════ EXPERIENCE / CAROUSEL ════ */
 #experience{background:var(--cream);}
-.exp-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(37px,4.3vw,57px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;}
+.exp-h2{font-family:'Barlow',sans-serif;font-size:clamp(37px,4.3vw,57px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;}
 .carousel-wrap{position:relative;margin-top:48px;overflow:hidden;}
 .carousel-track{display:flex;transition:transform 0.5s cubic-bezier(0.4,0,0.2,1);}
 .carousel-slide{min-width:100%;display:grid;grid-template-columns:1fr 1fr 1fr;gap:2px;background:rgba(200,152,30,0.14);border:1px solid var(--rule);}
@@ -194,9 +198,9 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 .exp-hover-img{position:absolute;inset:0;opacity:0;transition:opacity 0.35s ease;z-index:0;}
 .exp-hover-img img{width:100%;height:100%;object-fit:cover;filter:brightness(0.15) saturate(0.3);}
 .exp-card:hover .exp-hover-img{opacity:1;}
-.exp-icon{font-size:32px;margin-bottom:12px;display:block;position:relative;z-index:1;transition:transform 0.3s;}
+.exp-icon{margin-bottom:12px;display:block;position:relative;z-index:1;transition:transform 0.3s;}
 .exp-card:hover .exp-icon{transform:scale(1.12);}
-.exp-title{font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:700;color:var(--g-deep);margin-bottom:10px;position:relative;z-index:1;}
+.exp-title{font-family:'Barlow',sans-serif;font-size:21px;font-weight:700;color:var(--g-deep);margin-bottom:10px;position:relative;z-index:1;}
 .exp-card:hover .exp-title{color:var(--gold);}
 .exp-desc{font-size:16px;color:var(--ink-soft);font-style:italic;font-weight:300;line-height:1.65;position:relative;z-index:1;}
 /* carousel nav */
@@ -209,10 +213,10 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 /* ════ TAKE BACK ════ */
 #takeback{position:relative;background:var(--g-deep);overflow:hidden;}
 .takeback-inner{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;}
-.takeback-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(37px,4.3vw,57px);font-weight:700;color:var(--gold-lt);line-height:1.08;letter-spacing:-0.02em;}
-.takeback-intro{font-family:'Cormorant Garamond',serif;font-size:24px;font-style:italic;font-weight:400;color:rgba(251,247,239,0.68);line-height:1.65;margin:16px 0 40px;}
+.takeback-h2{font-family:'Barlow',sans-serif;font-size:clamp(37px,4.3vw,57px);font-weight:700;color:var(--gold-lt);line-height:1.08;letter-spacing:-0.02em;}
+.takeback-intro{font-family:'Barlow',sans-serif;font-size:24px;font-style:italic;font-weight:400;color:rgba(255,255,255,0.9);line-height:1.65;margin:16px 0 40px;}
 .outcome-list{list-style:none;}
-.outcome-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid rgba(200,152,30,0.1);font-size:19px;color:rgba(251,247,239,0.78);font-weight:300;line-height:1.6;transition:color 0.2s,padding-left 0.2s;}
+.outcome-item{display:flex;align-items:flex-start;gap:14px;padding:14px 0;border-bottom:1px solid rgba(200,152,30,0.1);font-size:19px;color:#FFFFFF;font-weight:300;line-height:1.6;transition:color 0.2s,padding-left 0.2s;}
 .outcome-item:last-child{border-bottom:none;}
 .outcome-item:hover{color:var(--cream);padding-left:6px;}
 .check{width:20px;height:20px;border:1.5px solid var(--gold);border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:9px;color:var(--gold);margin-top:2px;transition:background 0.2s;}
@@ -220,12 +224,12 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 
 /* ════ TESTI ════ */
 #testi{background:var(--white);}
-.testi-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(37px,4.3vw,57px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;}
+.testi-h2{font-family:'Barlow',sans-serif;font-size:clamp(37px,4.3vw,57px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;}
 .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:rgba(200,152,30,0.14);border:1px solid var(--rule);margin-top:48px;}
 .testi-card{background:var(--cream);padding:44px 34px;transition:background 0.25s,transform 0.25s;cursor:default;}
 .testi-card:hover{background:var(--cream-w);transform:translateY(-4px);}
-.testi-open{font-family:'Cormorant Garamond',serif;font-size:52px;color:var(--gold);opacity:0.28;line-height:1;margin-bottom:8px;display:block;}
-.testi-text{font-family:'Cormorant Garamond',serif;font-size:21px;font-style:italic;color:var(--ink-mid);line-height:1.78;margin-bottom:26px;}
+.testi-open{font-family:'Barlow',sans-serif;font-size:52px;color:var(--gold);opacity:0.28;line-height:1;margin-bottom:8px;display:block;}
+.testi-text{font-family:'Barlow',sans-serif;font-size:21px;font-style:italic;color:var(--ink-mid);line-height:1.78;margin-bottom:26px;}
 .testi-rule{height:1px;background:var(--rule);margin-bottom:16px;}
 .testi-name{font-weight:600;font-size:14px;color:var(--g-deep);letter-spacing:0.02em;}
 .testi-role{font-size:12px;color:var(--gold);margin-top:3px;}
@@ -236,35 +240,35 @@ body{font-family:'Barlow',sans-serif;background:var(--cream);color:var(--ink);ov
 .cost-bg img{width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(0.15) saturate(0.3) sepia(0.2);}
 .cost-bg::after{content:'';position:absolute;inset:0;background:var(--cream-w);opacity:0.88;}
 #cost .wrap{position:relative;z-index:2;}
-.cost-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(37px,4.3vw,57px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;}
-.cost-intro{font-family:'Cormorant Garamond',serif;font-size:21px;font-style:italic;color:var(--ink-mid);font-weight:300;max-width:640px;line-height:1.85;margin:14px 0 48px;}
+.cost-h2{font-family:'Barlow',sans-serif;font-size:clamp(37px,4.3vw,57px);font-weight:700;color:var(--gold);line-height:1.08;letter-spacing:-0.02em;}
+.cost-intro{font-family:'Barlow',sans-serif;font-size:21px;font-style:italic;color:var(--ink-mid);font-weight:300;max-width:640px;line-height:1.85;margin:14px 0 48px;}
 .cost-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:2px;background:rgba(200,152,30,0.14);border:1px solid var(--rule);margin-bottom:68px;}
 .cost-card{background:rgba(255,255,255,0.85);padding:40px 16px;text-align:center;transition:background 0.28s,transform 0.28s,box-shadow 0.28s;cursor:default;backdrop-filter:blur(4px);}
 .cost-card:hover{background:var(--white);transform:translateY(-5px);box-shadow:0 16px 40px rgba(0,0,0,0.1);}
-.cost-icon{font-size:30px;display:block;margin-bottom:16px;transition:transform 0.28s;}
+.cost-icon{display:block;margin-bottom:16px;transition:transform 0.28s;}
 .cost-card:hover .cost-icon{transform:scale(1.18);}
-.cost-text{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:700;color:var(--g-deep);line-height:1.5;}
+.cost-text{font-family:'Barlow',sans-serif;font-size:18px;font-weight:700;color:var(--g-deep);line-height:1.5;}
 
 /* ════ FINAL CTA ════ */
 #finalcta{position:relative;background:var(--g-deep);text-align:center;overflow:hidden;}
 #finalcta::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
 .finalcta-inner{max-width:900px;margin:0 auto;padding:120px 5%;position:relative;z-index:2;}
-.final-bq{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,3.8vw,50px);font-style:italic;font-weight:600;color:var(--gold-lt);line-height:1.4;margin-bottom:52px;}
-.final-h2{font-family:'Cormorant Garamond',serif;font-size:clamp(24px,2.8vw,38px);font-weight:700;color:var(--cream);margin-bottom:18px;letter-spacing:-0.01em;}
-.final-body{font-size:20px;color:rgba(251,247,239,0.6);font-weight:300;max-width:520px;margin:0 auto 48px;line-height:1.88;}
-.final-note{font-size:12px;color:rgba(200,152,30,0.42);font-style:italic;margin-top:14px;}
+.final-bq{font-family:'Barlow',sans-serif;font-size:clamp(28px,3.8vw,50px);font-style:italic;font-weight:600;color:var(--gold-lt);line-height:1.4;margin-bottom:52px;}
+.final-h2{font-family:'Barlow',sans-serif;font-size:clamp(24px,2.8vw,38px);font-weight:700;color:#FFFFFF;margin-bottom:24px;letter-spacing:-0.01em;}
+.final-body{font-size:20px;color:#FFFFFF;font-weight:300;max-width:520px;margin:0 auto 48px;line-height:1.88;}
+.final-note{font-size:16px;color:rgba(200,152,30,0.75);font-style:italic;margin-top:14px;}
 
 /* ════ FOOTER ════ */
 footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
 .footer-wrap{max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:48px;}
-.footer-contact{font-size:15px;color:rgba(251,247,239,0.5);line-height:2.4;}
+.footer-contact{font-size:17px;color:#FFFFFF;line-height:2.4;}
 .footer-contact a{color:var(--gold-lt);text-decoration:none;}
 .footer-contact a:hover{color:var(--gold);}
 .footer-logo img{height:80px;display:block;margin:0 auto;}
 .footer-right{text-align:right;}
-.footer-brand{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:var(--cream);display:block;margin-bottom:6px;}
-.footer-pillars{font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:0.12em;color:var(--gold);}
-.footer-bottom{max-width:1140px;margin:28px auto 0;padding-top:22px;border-top:1px solid rgba(200,152,30,0.07);text-align:center;font-size:12px;color:rgba(251,247,239,0.18);}
+.footer-brand{font-family:'Barlow',sans-serif;font-size:30px;font-weight:700;color:var(--cream);display:block;margin-bottom:6px;}
+.footer-pillars{font-family:'Barlow Condensed',sans-serif;font-size:16px;letter-spacing:0.12em;color:var(--gold);}
+.footer-bottom{max-width:1140px;margin:28px auto 0;padding-top:22px;border-top:1px solid rgba(200,152,30,0.07);text-align:center;font-size:16px;color:#FFFFFF;}
 
 /* ════ RESPONSIVE ════ */
 @media(max-width:1024px){
@@ -305,7 +309,7 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
     <li><a href="#experience">The Program</a></li>
     <li><a href="#takeback">Outcomes</a></li>
   </ul>
-  <a href="https://wa.me/919841049588" class="btn btn-gold" target="_blank" rel="noopener" style="padding:12px 26px;font-size:11px;">Apply for Your Seat</a>
+  <a href="https://wa.me/919841049588" class="btn btn-gold" target="_blank" rel="noopener" style="padding:10px 22px;font-size:13px;">Apply for Your Seat</a>
   <div class="hbg" id="hbg" onclick="toggleNav()"><span></span><span></span><span></span></div>
 </nav>
 
@@ -364,6 +368,9 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
 
 <!-- ══ REFRAME ══ -->
 <section id="reframe">
+  <div class="reframe-bg">
+    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1400&q=80&auto=format&fit=crop" alt="">
+  </div>
   <div class="wrap">
     <span class="lbl rv">The Reframe</span>
     <div class="reframe-inner">
@@ -444,22 +451,22 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
     <p class="whatitis-sub rv d2">Designed exclusively for business owners who are ready, not just willing, to unlock their next level of growth.</p>
     <div class="cards-grid rv d2">
       <div class="nope-card">
-        <span class="nope-icon">🚫</span>
+        <span class="nope-icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg></span>
         <span class="nope-badge">Not a</span>
         <p class="nope-text">Seminar</p>
       </div>
       <div class="nope-card">
-        <span class="nope-icon">🎤</span>
+        <span class="nope-icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"/><path d="M9 9v3a3 3 0 0 0 5.12 2.12M15 9.34V4a3 3 0 0 0-5.94-.6"/><path d="M17 16.95A7 7 0 0 1 5 12v-2m14 0v2a7 7 0 0 1-.11 1.23"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg></span>
         <span class="nope-badge">Not a</span>
         <p class="nope-text">Motivational Program</p>
       </div>
       <div class="nope-card">
-        <span class="nope-icon">🤝</span>
+        <span class="nope-icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="1" y1="1" x2="23" y2="23"/><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg></span>
         <span class="nope-badge">Not another</span>
         <p class="nope-text">Networking Event</p>
       </div>
       <div class="yes-card">
-        <span class="yes-icon">✦</span>
+        <span class="yes-icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--gold-lt)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
         <span class="yes-badge">This IS</span>
         <p class="yes-text">An immersive experience where business owners learn, challenge, reflect, collaborate, and commit to meaningful, measurable growth.</p>
       </div>
@@ -479,19 +486,19 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
         <div class="carousel-slide">
           <div class="exp-card">
             <div class="exp-hover-img"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&q=80&auto=format&fit=crop" alt=""></div>
-            <span class="exp-icon">🎯</span>
+            <span class="exp-icon"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--g-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span>
             <h3 class="exp-title">Business Growth Simulations</h3>
             <p class="exp-desc">Real scenarios. Real decisions. Real clarity.</p>
           </div>
           <div class="exp-card">
             <div class="exp-hover-img"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&q=80&auto=format&fit=crop" alt=""></div>
-            <span class="exp-icon">🤲</span>
+            <span class="exp-icon"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--g-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
             <h3 class="exp-title">Peer Learning & Collaboration</h3>
             <p class="exp-desc">Learn from owners who've been where you are.</p>
           </div>
           <div class="exp-card">
             <div class="exp-hover-img"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&q=80&auto=format&fit=crop" alt=""></div>
-            <span class="exp-icon">🔥</span>
+            <span class="exp-icon"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--g-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 12c0-3 2.5-5 2.5-8A6 6 0 0 0 6 7c0 5 4 6 4 9"/><path d="M12 12c0-3-2.5-5-2.5-8"/><path d="M9 21c0-2 1.5-3 1.5-5"/><path d="M15 21c0-2-1.5-3-1.5-5"/></svg></span>
             <h3 class="exp-title">Fireside Growth Conversations</h3>
             <p class="exp-desc">Candid, unfiltered dialogue on what's holding growth back.</p>
           </div>
@@ -500,19 +507,19 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
         <div class="carousel-slide">
           <div class="exp-card">
             <div class="exp-hover-img"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80&auto=format&fit=crop" alt=""></div>
-            <span class="exp-icon">🧭</span>
+            <span class="exp-icon"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--g-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg></span>
             <h3 class="exp-title">Strategic Reflection</h3>
             <p class="exp-desc">Structured space to think, not just react.</p>
           </div>
           <div class="exp-card">
             <div class="exp-hover-img"><img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&q=80&auto=format&fit=crop" alt=""></div>
-            <span class="exp-icon">⚡</span>
+            <span class="exp-icon"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--g-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></span>
             <h3 class="exp-title">Action Planning</h3>
             <p class="exp-desc">Leave with a plan you'll actually execute.</p>
           </div>
           <div class="exp-card">
             <div class="exp-hover-img"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600&q=80&auto=format&fit=crop" alt=""></div>
-            <span class="exp-icon">🌱</span>
+            <span class="exp-icon"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--g-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M12 12C12 7 17 3 17 3s0 9-5 9"/><path d="M12 12C12 7 7 3 7 3s0 9 5 9"/></svg></span>
             <h3 class="exp-title">Experiential Learning</h3>
             <p class="exp-desc">Deep learning through doing, not just listening.</p>
           </div>
@@ -521,7 +528,7 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
         <div class="carousel-slide" style="grid-template-columns:1fr;">
           <div class="exp-card" style="grid-column:1/-1;">
             <div class="exp-hover-img"><img src="https://images.unsplash.com/photo-1434626881859-194d67b2b86f?w=600&q=80&auto=format&fit=crop" alt=""></div>
-            <span class="exp-icon">🗺️</span>
+            <span class="exp-icon"><svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--g-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></span>
             <h3 class="exp-title">90-Day Follow-Through Framework</h3>
             <p class="exp-desc">Because insight without implementation is just entertainment.</p>
           </div>
@@ -567,99 +574,31 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
 
 <!-- ══ TESTI ══ -->
 <style>
-/* ── TESTI CAROUSEL ── */
-#testi { background: var(--white); }
-.testi-carousel-wrap { position: relative; overflow: hidden; margin-top: 48px; }
-.testi-track { display: flex; transition: transform 0.55s cubic-bezier(0.4,0,0.2,1); }
-.testi-slide {
-  min-width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2px;
-  background: rgba(200,152,30,0.14);
-  border: 1px solid var(--rule);
-}
-.testi-card {
-  background: var(--cream);
-  padding: 44px 36px;
-  transition: background 0.25s, transform 0.25s;
-  cursor: default;
-  position: relative;
-  overflow: hidden;
-}
-.testi-card::before {
-  content: '';
-  position: absolute;
-  bottom: 0; left: 0; right: 0;
-  height: 2px;
-  background: var(--gold);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.35s ease;
-}
-.testi-card:hover { background: var(--cream-w); }
-.testi-card:hover::before { transform: scaleX(1); }
-.testi-source {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-.testi-source-icon {
-  width: 32px; height: 32px;
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 14px;
-  flex-shrink: 0;
-  font-weight: 700;
-}
-.src-google { background: #fff; border: 1px solid #e0e0e0; color: #4285F4; font-size: 11px; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.05em; }
-.src-linkedin { background: #0A66C2; color: #fff; font-size: 11px; font-family: 'Barlow Condensed', sans-serif; letter-spacing: 0.05em; }
-.testi-stars { color: #F4B400; font-size: 13px; letter-spacing: 1px; }
-.testi-open {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 52px; color: var(--gold);
-  opacity: 0.25; line-height: 1;
-  margin-bottom: 8px; display: block;
-}
-.testi-text {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 18px; font-style: italic;
-  color: var(--ink-mid);
-  line-height: 1.78; margin-bottom: 24px;
-}
-.testi-rule { height: 1px; background: var(--rule); margin-bottom: 16px; }
-.testi-name { font-weight: 600; font-size: 14px; color: var(--g-deep); letter-spacing: 0.02em; }
-.testi-role { font-size: 12px; color: var(--gold); margin-top: 3px; line-height: 1.5; }
-/* nav */
-.testi-nav {
-  display: flex; align-items: center;
-  justify-content: center; gap: 14px;
-  margin-top: 28px;
-}
-.t-dot {
-  width: 7px; height: 7px; border-radius: 50%;
-  background: rgba(200,152,30,0.3);
-  cursor: pointer; transition: background 0.25s, transform 0.25s;
-  border: none;
-}
-.t-dot.active { background: var(--gold); transform: scale(1.4); }
-.t-btn {
-  background: none; border: 1.5px solid var(--rule-s);
-  color: var(--gold); width: 38px; height: 38px;
-  cursor: pointer; font-size: 15px;
-  display: flex; align-items: center; justify-content: center;
-  transition: all 0.25s;
-}
-.t-btn:hover { background: var(--gold); color: var(--g-deep); }
-.testi-count {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 12px; letter-spacing: 0.12em;
-  color: var(--ink-soft); min-width: 40px; text-align: center;
-}
-@media(max-width:768px) {
-  .testi-slide { grid-template-columns: 1fr; }
-}
+#testi{background:var(--white);}
+.testi-carousel-wrap{position:relative;overflow:hidden;margin-top:48px;}
+.testi-track{display:flex;transition:transform 0.55s cubic-bezier(0.4,0,0.2,1);}
+.testi-slide{min-width:100%;padding:0 15%;}
+.testi-card{background:var(--cream);padding:52px 56px;transition:background 0.25s;position:relative;overflow:hidden;border:1px solid var(--rule);}
+.testi-card::before{content:'';position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--gold);transform:scaleX(0);transform-origin:left;transition:transform 0.35s ease;}
+.testi-card:hover{background:var(--cream-w);}
+.testi-card:hover::before{transform:scaleX(1);}
+.testi-source{display:flex;align-items:center;gap:10px;margin-bottom:24px;}
+.testi-source-icon{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;font-weight:700;font-family:'Barlow Condensed',sans-serif;}
+.src-google{background:#fff;border:1px solid #e0e0e0;color:#4285F4;}
+.src-linkedin{background:#0A66C2;color:#fff;}
+.testi-stars{color:#F4B400;font-size:14px;letter-spacing:2px;}
+.testi-open{font-family:'Barlow',sans-serif;font-size:52px;color:var(--gold);opacity:0.22;line-height:1;margin-bottom:12px;display:block;}
+.testi-text{font-family:'Barlow',sans-serif;font-size:21px;font-style:italic;color:#060607;line-height:1.78;margin-bottom:28px;font-weight:300;}
+.testi-rule{height:1px;background:var(--rule);margin-bottom:18px;}
+.testi-name{font-weight:600;font-size:16px;color:var(--g-deep);letter-spacing:0.02em;}
+.testi-role{font-size:13px;color:var(--g-mid);margin-top:4px;line-height:1.5;}
+.testi-nav{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:28px;}
+.t-dot{width:7px;height:7px;border-radius:50%;background:rgba(200,152,30,0.3);cursor:pointer;transition:background 0.25s,transform 0.25s;border:none;padding:0;}
+.t-dot.active{background:var(--gold);transform:scale(1.4);}
+.t-btn{background:none;border:1.5px solid var(--rule-s);color:var(--gold);width:38px;height:38px;cursor:pointer;font-size:15px;display:flex;align-items:center;justify-content:center;transition:all 0.25s;}
+.t-btn:hover{background:var(--gold);color:var(--g-deep);}
+.testi-count{font-family:'Barlow Condensed',sans-serif;font-size:12px;letter-spacing:0.12em;color:var(--ink-soft);min-width:40px;text-align:center;}
+@media(max-width:768px){.testi-slide{padding:0 4%;}}
 </style>
 <section id="testi">
   <div class="wrap">
@@ -669,103 +608,99 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
     <div class="testi-carousel-wrap rv d2">
       <div class="testi-track" id="testiTrack">
 
-        <!-- Slide 1 -->
         <div class="testi-slide">
-                    <div class="testi-card">
-            <div class="testi-source">
-              <div class="testi-source-icon src-linkedin">in</div>
-              <span class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            </div>
+          <div class="testi-card">
+            <div class="testi-source"><div class="testi-source-icon src-linkedin">in</div><span class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+            <span class="testi-open">&#8220;</span>
+            <p class="testi-text">Most advisors give you frameworks. Coach Murali gives you the truth, and that is a much harder gift. Every conversation was uncomfortable. All of them moved the company forward.</p>
+            <div class="testi-rule"></div>
+            <p class="testi-name">Rajesh Subramanian</p>
+            <p class="testi-role">Founder, SuiteAI | AI-Powered C-Suite for SMEs</p>
+          </div>
+        </div>
+
+        <div class="testi-slide">
+          <div class="testi-card">
+            <div class="testi-source"><div class="testi-source-icon src-linkedin">in</div><span class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
             <span class="testi-open">&#8220;</span>
             <p class="testi-text">Results speak his expertise on helping businesses to earn real profits and scale up smoothly. Real star of business success enablement. He helped my business from perish to flourish in style.</p>
             <div class="testi-rule"></div>
             <p class="testi-name">Chandramouli</p>
             <p class="testi-role">Founder, Aditya Techno Solutions</p>
           </div>
+        </div>
+
+        <div class="testi-slide">
           <div class="testi-card">
-            <div class="testi-source">
-              <div class="testi-source-icon src-linkedin">in</div>
-              <span class="testi-stars">★★★★★</span>
-            </div>
-            <span class="testi-open">"</span>
-            <p class="testi-text">His strategic guidance wasn't just theoretical, it was actionable, tailored, and game-changing. Murali has an uncanny ability to simplify complex challenges. His coaching reshaped how we approach problems, turning obstacles into opportunities.</p>
+            <div class="testi-source"><div class="testi-source-icon src-linkedin">in</div><span class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+            <span class="testi-open">&#8220;</span>
+            <p class="testi-text">His strategic guidance was not just theoretical. It was actionable, tailored, and game-changing. Murali has an uncanny ability to simplify complex challenges. His coaching reshaped how we approach problems, turning obstacles into opportunities.</p>
             <div class="testi-rule"></div>
             <p class="testi-name">Dr. Fazlul Rahman</p>
-            <p class="testi-role">SEO Consultant & AI Strategist | HEY SEARCH & Hey Group of Companies<br>Dubai's Leading Digital Marketing Visionary 2025</p>
+            <p class="testi-role">SEO Consultant and AI Strategist | HEY SEARCH and Hey Group of Companies</p>
           </div>
         </div>
 
-        <!-- Slide 2 -->
         <div class="testi-slide">
-                    <div class="testi-card">
-            <div class="testi-source">
-              <div class="testi-source-icon src-linkedin">in</div>
-              <span class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            </div>
+          <div class="testi-card">
+            <div class="testi-source"><div class="testi-source-icon src-google">G</div><span class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
             <span class="testi-open">&#8220;</span>
-            <p class="testi-text">Working with Coach Murali has been a privilege. His pivotal role in implementing the Bridge Academy Universal 8 Grade System has been instrumental in its success. His exceptional management and collaborative skills are truly commendable. Coach Murali has a unique talent for articulating ideas with confidence and clarity.</p>
+            <p class="testi-text">Every minute one spends with Coach Murali provides invaluable lessons both in business and life. He asks the right questions that we might fear asking ourselves, and gives us a totally different perspective about ourselves and our business.</p>
+            <div class="testi-rule"></div>
+            <p class="testi-name">Bhargav Sundaram</p>
+            <p class="testi-role">Director, Callidai Motor Works</p>
+          </div>
+        </div>
+
+        <div class="testi-slide">
+          <div class="testi-card">
+            <div class="testi-source"><div class="testi-source-icon src-linkedin">in</div><span class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+            <span class="testi-open">&#8220;</span>
+            <p class="testi-text">Working with Coach Murali has been a privilege. His pivotal role in implementing the Bridge Academy Universal 8 Grade System has been instrumental in its success. His exceptional management and collaborative skills are truly commendable.</p>
             <div class="testi-rule"></div>
             <p class="testi-name">RaghuRaman</p>
             <p class="testi-role">Founder Director, Bridge Academy</p>
           </div>
         </div>
 
-        <!-- Slide 3 -->
         <div class="testi-slide">
           <div class="testi-card">
-            <div class="testi-source">
-              <div class="testi-source-icon src-linkedin">in</div>
-              <span class="testi-stars">★★★★★</span>
-            </div>
-            <span class="testi-open">"</span>
+            <div class="testi-source"><div class="testi-source-icon src-linkedin">in</div><span class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+            <span class="testi-open">&#8220;</span>
             <p class="testi-text">An undoubtedly competent authority that you should resort to if you wish to take your business to the next level as you eliminate losses and debt.</p>
             <div class="testi-rule"></div>
             <p class="testi-name">Dr. Diptanshu Das</p>
-            <p class="testi-role">Paediatric Neurologist | Founder, Incredible Doctor<br>Founder, Institute of NeuroDevelopment</p>
-          </div>
-          <div class="testi-card">
-            <div class="testi-source">
-              <div class="testi-source-icon src-linkedin">in</div>
-              <span class="testi-stars">★★★★★</span>
-            </div>
-            <span class="testi-open">"</span>
-            <p class="testi-text">I attended the webinar "Upturn Your Business to Profit" by Coach Murali. He has thorough knowledge on this subject. He learned excellent business running secrets. I am sure he will be of great help to any business in debt.</p>
-            <div class="testi-rule"></div>
-            <p class="testi-name">Laxmikant Surve</p>
-            <p class="testi-role">CEO & Founder, LMS Architects & Property Valuers<br>IGBC AP · BNI Member · IBBI Registered Valuer</p>
+            <p class="testi-role">Paediatric Neurologist | Founder, Incredible Doctor</p>
           </div>
         </div>
 
-        <!-- Slide 4, solo card centered -->
-        <div class="testi-slide" style="grid-template-columns:1fr;">
-          <div class="testi-card" style="max-width:640px; margin:0 auto; width:100%;">
-            <div class="testi-source">
-              <div class="testi-source-icon src-linkedin">in</div>
-              <span class="testi-stars">★★★★★</span>
-            </div>
-            <span class="testi-open">"</span>
+        <div class="testi-slide">
+          <div class="testi-card">
+            <div class="testi-source"><div class="testi-source-icon src-linkedin">in</div><span class="testi-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span></div>
+            <span class="testi-open">&#8220;</span>
             <p class="testi-text">Coach Murali has always been abundant and benevolent in his practice. I personally treat Murali sir as my personal Yoda, my walking Library. If Growth, Alignment, Mastery, Success and Profits are what you seek, then your search ends here.</p>
             <div class="testi-rule"></div>
             <p class="testi-name">Aditya Mhatre</p>
-            <p class="testi-role">Leadership Development | Capability Building | Strategic L&D<br>AI-based Business Transformation | Executive Coaching</p>
+            <p class="testi-role">Leadership Development | Capability Building | Executive Coaching</p>
           </div>
         </div>
 
-      </div><!-- /track -->
-
+      </div>
       <div class="testi-nav">
         <button class="t-btn" onclick="testiPrev()">&#8592;</button>
         <button class="t-dot active" onclick="testiGo(0)"></button>
         <button class="t-dot" onclick="testiGo(1)"></button>
         <button class="t-dot" onclick="testiGo(2)"></button>
         <button class="t-dot" onclick="testiGo(3)"></button>
-        <span class="testi-count" id="testiCount">1 / 4</span>
+        <button class="t-dot" onclick="testiGo(4)"></button>
+        <button class="t-dot" onclick="testiGo(5)"></button>
+        <button class="t-dot" onclick="testiGo(6)"></button>
+        <span class="testi-count" id="testiCount">1 / 7</span>
         <button class="t-btn" onclick="testiNext()">&#8594;</button>
       </div>
     </div>
   </div>
 </section>
-
 <!-- ══ COST ══ -->
 <section id="cost">
   <div class="cost-bg">
@@ -777,11 +712,11 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
     <div class="gold-rule rv d1"></div>
     <p class="cost-intro rv d2">Every year of delayed growth carries a hidden price that rarely appears on a balance sheet, but is paid nonetheless.</p>
     <div class="cost-grid">
-      <div class="cost-card rv"><span class="cost-icon">⏳</span><p class="cost-text">Opportunities that never return</p></div>
-      <div class="cost-card rv d1"><span class="cost-icon">📉</span><p class="cost-text">Profits that could have been earned</p></div>
-      <div class="cost-card rv d2"><span class="cost-icon">🎯</span><p class="cost-text">Market share captured by competitors</p></div>
-      <div class="cost-card rv d3"><span class="cost-icon">👥</span><p class="cost-text">Team potential left unrealised</p></div>
-      <div class="cost-card rv d4"><span class="cost-icon">⌛</span><p class="cost-text">Time that can never be recovered</p></div>
+      <div class="cost-card rv"><span class="cost-icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--g-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22h14M5 2h14M17 22v-4.172a2 2 0 0 0-.586-1.414L12 12l-4.414 4.414A2 2 0 0 0 7 17.828V22M7 2v4.172a2 2 0 0 1 .586 1.414L12 12l4.414-4.414A2 2 0 0 0 17 6.172V2"/></svg></span><p class="cost-text">Opportunities that never return</p></div>
+      <div class="cost-card rv d1"><span class="cost-icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--g-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"/><polyline points="16 17 22 17 22 11"/></svg></span><p class="cost-text">Profits that could have been earned</p></div>
+      <div class="cost-card rv d2"><span class="cost-icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--g-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></span><p class="cost-text">Market share captured by competitors</p></div>
+      <div class="cost-card rv d3"><span class="cost-icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--g-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span><p class="cost-text">Team potential left unrealised</p></div>
+      <div class="cost-card rv d4"><span class="cost-icon"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--g-mid)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span><p class="cost-text">Time that can never be recovered</p></div>
     </div>
   </div>
 </section>
@@ -790,9 +725,12 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
 <section id="finalcta">
   <div class="grain"></div>
   <div class="finalcta-inner">
-    <blockquote class="final-bq rv">If you already think<br>that this is for you,<br><em>trust that knowing.</em><br>Sign up for Selection.</blockquote>
-    <div class="gold-rule rv" style="margin:0 auto 44px;"></div>
-    <h2 class="final-h2 rv d1">This Program Is Not for Everyone.<br>It Is for You, If You Are Ready.</h2>
+    <h2 class="final-h2 rv">This Program Is Not for Everyone.</h2>
+    <blockquote class="final-bq rv d1">
+      If you already think<br>that this is for you,<br>
+      <em>trust that knowing.</em>
+    </blockquote>
+    <div class="gold-rule rv d1" style="margin:0 auto 40px;"></div>
     <p class="final-body rv d2">Seats are limited. This is a by-qualification program. If you are a business owner serious about your next phase of growth, the first step is a conversation.</p>
     <div class="rv d3">
       <a href="https://wa.me/919841049588" class="btn btn-gold" target="_blank" rel="noopener">Sign Up for Selection</a>
@@ -800,7 +738,6 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
     </div>
   </div>
 </section>
-
 <!-- FOOTER -->
 <footer>
   <div class="footer-wrap">
@@ -812,7 +749,7 @@ footer{background:#0B150B;border-top:1px solid var(--rule-s);padding:56px 5%;}
     <div class="footer-right">
       <span class="footer-brand">Coach Murali</span>
       <div class="footer-pillars">Business Growth System™</div>
-      <div class="footer-pillars" style="margin-top:6px;opacity:0.6;">Bigger · Better · Bankable · Debt-Free</div>
+      <div class="footer-pillars" style="margin-top:6px;opacity:0.85;font-size:14px;">Bigger · Better · Bankable · Debt-Free</div>
     </div>
   </div>
   <div class="footer-bottom">© 2025 Coach Murali, Business Growth System™. All rights reserved.</div>
@@ -846,7 +783,7 @@ function carouselPrev(){goSlide((cur-1+total)%total);}
 setInterval(()=>carouselNext(),5000);
 
 // Testimonial carousel
-let tc = 0; const tt = 4;
+let tc = 0; const tt = 7;
 function testiGo(n) {
   tc = n;
   document.getElementById('testiTrack').style.transform = `translateX(-${tc * 100}%)`;
